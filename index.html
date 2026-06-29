@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Flight Simulator</title>
+    <style>
+      /* 画面全体の余白をゼロにし、スクロールバーを非表示にする */
+      body { 
+        margin: 0; 
+        overflow: hidden; 
+        background-color: #000;
+      }
+      /* 3Dを描画するキャンバスを画面いっぱいに広げる */
+      canvas { 
+        width: 100vw; 
+        height: 100vh; 
+        display: block; 
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Three.jsが3Dを描画するためのキャンバス -->
+    <canvas id="simCanvas"></canvas>
+
+    <!-- TypeScriptのエントリーポイントファイルを読み込む（Vite用） -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
